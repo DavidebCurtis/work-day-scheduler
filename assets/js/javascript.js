@@ -43,23 +43,23 @@ $(".hour").each(function () {
 
   // sets .hour class to past if that rowHour is less than currentHour
   if (rowHour < currentHour) {
-    $(this).addClass("past");
-    $(this).removeClass("future");
-    $(this).removeClass("present");
+    $(this).siblings(".description").addClass("past");
+    $(this).siblings(".description").removeClass("future");
+    $(this).siblings(".description").removeClass("present");
   }
 
   // sets .hour class to present if that rowHour is equal to currentHour
   if (rowHour == currentHour) {
-    $(this).addClass("present");
-    $(this).removeClass("past");
-    $(this).removeClass("future");
+    $(this).siblings(".description").addClass("present");
+    $(this).siblings(".description").removeClass("past");
+    $(this).siblings(".description").removeClass("future");
   }
 
   // sets .hour class to future if that rowHour is greater than currentHour
   if (rowHour > currentHour) {
-    $(this).addClass("future");
-    $(this).removeClass("past");
-    $(this).removeClass("present");
+    $(this).siblings(".description").addClass("future");
+    $(this).siblings(".description").removeClass("past");
+    $(this).siblings(".description").removeClass("present");
   }
 });
 

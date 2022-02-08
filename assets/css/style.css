@@ -24,7 +24,7 @@ textarea {
 .description {
   white-space: pre-wrap;
   width: 80%;
-  background-color: #53c2ed;
+  /* background-color: #53c2ed; */
 }
 
 .time-block {
